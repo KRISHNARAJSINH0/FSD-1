@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li
+        {
+            color: orange;
+            font-size: 30px;
+        }
+        ul>li
+        {
+            color : brown;
+            font-size: 20px;
+        }
+    </style>
+
+    <style>
+        .odd
+        {
+            background-color: aqua;
+        }
+        .even
+        {
+            background-color: pink;
+        }
+        [type = "text"]
+        {
+            background-color: blue;
+        }
+        [type = "email"]
+        {
+            background-color: red;
+        }
+        [type = "button"]
+        {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- use appropreate selector to complete the following
+       1. create a nested least as given. all the direct child li must have color brown and size 20px. all the nested li must have color orange and size 30px.
+       2. create table with three rows odd row having bgcolor pink and even rows having yellow
+       3. create a form with one text box,one email and two buttons. use attribute selectors for diffrent bgcolor for each input type -->
+
+       <ul> 
+        <li>Apples
+            <ol>
+                <li>Green</li>
+                <li>Red</li>
+            </ol>
+        </li>
+        <li>Pineapple</li>
+        <li>Dragon Fruit
+            <ol start="a">
+                <li>white</li>
+                <li>Red</li>
+            </ol>
+        </li>
+       </ul>
+
+       <table border="2px"  rules="all" hight="100" width="80">
+        <tr align="center" bgcolor="pink">  
+            <td>a</td>
+            <td>d</td>
+        </tr>
+        <tr align="center" bgcolor="yellow">
+            <td>b</td>
+            <td>e</td>
+        </tr>
+        <tr align="center" bgcolor="pink">
+            <td>c</td>
+            <td>f</td>
+        </tr>
+       </table>
+
+       <br> 
+
+    <form action="#_self">
+        <span>First Name : <input type="text"></span>
+        <br><br>
+        <span>E-mail : <input type="email"></span>
+        <br><br>
+        <button type="button">
+            <span>Submit</span>
+        </button>
+        <button type="button">
+            <span>Reset</span>
+        </button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+
+        /* 1. Universal */
+        *{
+            text-align:center;
+        }
+
+        /* 2. Element */
+        div{
+            text-align: left;
+        }
+
+        /* 3. id */
+        #a{
+            text-align:right;
+            color:red;
+        }
+
+        /* 4. class */
+        .bluet{
+            color: blue;
+            background-color:aqua;
+        }
+        .greent{
+            color:green;
+            background-color:lightgreen;
+        }
+        .demo{
+            color:pink;
+            font-size: 50px;
+        }
+        div.greent{       /* element + class*/
+            font-size: 30px;
+            color:grey;
+        }
+        p.greent{
+            font-size: 100px;
+        }
+        div#a{
+            color:blue;
+        }
+
+        /* Combinator */
+
+        /* 5. Child */
+        /* ex: .abc>#gf */
+        div > p
+        {
+            color: purple;
+            text-align: left;
+        }
+
+        /* 6. Descendant */
+        div p
+        {
+            color: silver;
+            text-align: right;
+        }
+
+        /* 7. Grouping */
+        p,div,a,article
+        {
+            color: magenta;
+        }
+
+        /* 8. Attribute */
+        a[target]
+        {
+            color: hotpink;
+            background-color: peachpuff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Types of Selector</h1>
+
+    <div id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quos provident laudantium blanditiis magni tempore beatae error veritatis ab. Est?</div>
+    <div class="bluet demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus ullam tempore, distinctio dolore reiciendis illo facilis. Consectetur, laborum dignissimos.</div>
+    <div class="bluet">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores amet ducimus ipsa veniam corrupti ipsam illum, aspernatur ipsum obcaecati.</div>
+    <div class="greent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ipsa minima quaerat repudiandae rem vero dolorum aperiam similique soluta porro?</div>
+    <div class="greent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem deserunt voluptatibus quaerat soluta dolores magnam quam officia. Reiciendis, tenetur laborum.</div>
+    
+
+    <p class="greent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad.</p>
+
+    <div>
+        Demo div
+        <p> This is para 1 </p>
+        <article>demo article 
+            <p> This is para 2 </p>
+        </article>
+        <p> This is para 3 </p>
+    </div>
+
+    <a href="f2.html"> link to file 1 </a>
+    <br>
+    <a href="f2.html" target="_self"> link to file 2 </a>
+    <br>
+    <a href="f2.html" target="_blank"> link to file 3 </a>
+</body>
+</html>
+
+/*      Selector   |   Symbol
+    ---------------|--------------
+      1.Universal  |   *
+      2.Element    |   Element
+      3.Id         |   #
+      4.class      |   .
+      5.child      |   selector1>selectore2
+      6. Descendant|   
+*/

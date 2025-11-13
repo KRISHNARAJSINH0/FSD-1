@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link
+        {
+            color: green;
+            background-color: pink;
+        }
+        /* #l:link
+        {
+            color: green;
+        } */
+
+        a:visited
+        {
+            color: black;
+            background-color: lime;
+        }
+
+        a:hover
+        {
+            font-size: 40px;
+        }
+
+        a:active
+        {
+            text-decoration: none;
+            color: gold;
+            background-color: black;
+        }
+
+        .d>p:nth-child(3)
+        {
+            background-color: yellow;
+        }
+
+        div:not(.sp)
+        {
+            color: red;
+            background-color: pink;
+        }
+
+        h1:hover
+        {
+            color: deepskyblue;
+            background-color: aqua;
+            font-size: 30px;
+        }
+
+        input:focus
+        {
+            background-color: lightblue;
+            color: hotpink;
+            font-size: 25px;
+        }
+
+        h1::before
+        {
+            content: url("b1.jpg");
+            color: red;
+        }
+        h1::after
+        {
+            content: "😉😘😉🤣❤";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <a href="#">link 1</a>
+    <a href="##">link 2</a>
+    <a href="###">link 3</a>
+    <a href="####" id = "l">link 4</a>
+
+    <!-- div.d>p*5{hello $} -->
+    <div class="d">
+        <p>hello 1</p>
+        <p>hello 2</p>
+        <p>hello 3</p>
+        <p>hello 4</p>
+        <p>hello 5</p>
+    </div>
+
+    <!-- div.c*3{abc} -->
+    <div class="sp">abc</div>
+    <div class="c">abc</div>
+    <div class="c">abc</div>
+
+    <br>
+    <form>First Name : <input type="text" placeholder="Enter Name"></form>
+</body>
+</html>

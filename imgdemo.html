@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+        }
+        img
+        {
+            height: 200px;
+            width: 200px;
+        }
+
+        /* ch-4 selectors / flex / grid  }-5 mark */
+        /* ch-5 transition / animation / transform / gradient }- 5 marks*/
+
+        /* Rounded - image & flip image*/
+        #i1
+        {
+            border-radius: 50%;
+            transition: all 3s;
+        }
+        #i1:hover
+        {
+            transform: scaleX(-1); /* or rotateY(180deg)*/
+            
+        }
+
+        /* transparent image */
+        #i2
+        {
+            opacity: 0.5;
+        }
+
+        /* Responsive image*/
+        #i3
+        {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Text on image */
+        #p4
+        {
+            position: relative;
+            height: 200px;
+            width: 200px;
+        }
+        #i4
+        {
+            opacity: 0.5;
+        }
+        #l
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #r
+        {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        /* thumbnail image */
+        #i5
+        {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #i5:hover
+        {
+            box-shadow: 5px 5px 5px grey;
+        }
+    </style>
+</head>
+<body>
+    <img src="s1.jfif" alt="" id="i1">
+    <img src="s2.jfif" alt="" id="i2">
+    <img src="image1.jfif" alt="" id="i3">
+    <div id="p4">
+        <img src="s1.jfif" alt="" id="i4">
+        <div id="l">hello left</div>
+        <div id="r">hello right</div>
+    </div>
+    <img src="s2.jfif" alt="" id="i5">
+</body>
+</html>

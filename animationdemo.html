@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ani
+        {
+            0% /* from */
+            {
+                background-color: orange;
+            }
+            50%
+            {
+                background-color: red;
+            }
+            100% /* to */
+            {
+                background-color: lime;
+            }
+        }
+        #d1
+        {
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            border: 2px solid black;
+
+            animation-name: ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate-reverse;
+        }
+        
+        @keyframes ani2
+        {
+            0%
+            {
+                background-color: orange;
+                transform: translate(0px) rotate(0deg);
+            }
+            25%
+            {
+                background-color: green;
+                transform: translateX(200px) rotate(90deg);
+            }
+            50%
+            {
+                background-color: red;
+                transform: translate(200px,200px) rotate(180deg);
+            }
+            75%
+            {
+                background-color: blue;
+                transform: translateY(200px) rotate(270deg);
+            }
+            100%
+            {
+                background-color: orange;
+                transform: translate(0px) rotate(360deg);
+            }
+        }
+        #d2
+        {
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            border: 2px solid black;
+
+            /* animation : name duration function delay count direction */
+            animation: ani2 8s ease-in-out 0s infinite alternate ;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+
+    <br>
+    <div id="d2"></div>
+</body>
+</html>
