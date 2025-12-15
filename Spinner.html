@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Multiple Spinners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container my-5">
+
+    <h2 class="text-center mb-4">Bootstrap Spinners – All in One</h2>
+
+    <!-- 1. Border Spinners -->
+    <h4>1. Border Spinners</h4>
+    <div class="d-flex gap-3 mb-4">
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border text-info"></div>
+    </div>
+
+    <!-- 2. Grow Spinners -->
+    <h4>2. Grow Spinners</h4>
+    <div class="d-flex gap-3 mb-4">
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-info"></div>
+    </div>
+
+    <!-- 3. Small & Large Spinners -->
+    <h4>3. Small & Large Spinners</h4>
+    <div class="d-flex align-items-center gap-4 mb-4">
+        <div class="spinner-border spinner-border-sm text-primary"></div>
+        <div class="spinner-border text-success" style="width:3rem;height:3rem;"></div>
+        <div class="spinner-grow spinner-grow-sm text-danger"></div>
+        <div class="spinner-grow text-warning" style="width:3rem;height:3rem;"></div>
+    </div>
+
+    <!-- 4. Spinner with Text -->
+    <h4>4. Spinner with Text</h4>
+    <div class="d-flex align-items-center gap-3 mb-4">
+        <div class="spinner-border text-primary"></div>
+        <strong>Loading data...</strong>
+    </div>
+
+    <!-- 5. Spinners in Buttons -->
+    <h4>5. Spinners in Buttons</h4>
+    <div class="mb-4">
+        <button class="btn btn-primary me-2" disabled>
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading
+        </button>
+
+        <button class="btn btn-success" disabled>
+            <span class="spinner-grow spinner-grow-sm"></span>
+            Processing
+        </button>
+    </div>
+
+    <!-- 6. Centered Multiple Spinners -->
+    <h4>6. Centered Spinners</h4>
+    <div class="d-flex justify-content-center gap-4 mb-4">
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-danger"></div>
+    </div>
+
+    <!-- 7. Full Screen Loading Overlay (Demo) -->
+    <h4>7. Full Screen Loading Overlay</h4>
+    <p>This overlay is always visible for demo purpose.</p>
+
+</div>
+
+<!-- Fullscreen Spinner Overlay -->
+<!-- <div class="position-fixed top-0 start-0 w-100 h-100 
+            d-flex justify-content-center align-items-center 
+            bg-dark bg-opacity-50">
+    <div class="text-center text-white">
+        <div class="spinner-border mb-3" style="width:4rem;height:4rem;"></div>
+        <h5>Loading Please Wait...</h5>
+    </div>
+</div> -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
