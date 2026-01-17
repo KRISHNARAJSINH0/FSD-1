@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1) onkeydown
+        // function fun(id){
+        //     id.bgColor = "red"
+        // }
+        // // 2) onkeyup
+        // function fun1(id){
+        //     id.bgColor = "blue"
+        // }
+        // // 3) onkeypress
+        // function fun2(e){
+        //     alert(e.keyCode)
+        // }
+
+        // Task
+        // write js to handal following keyevents 1 = give keycode for the key pess scrip should give msg vowel is press on prssing vowel key 
+        //backgound color should turn to red after relising the prss key 
+        function f1(id){
+            if(id == "a,A"){
+                id.bgColor = "red"
+            }   
+        }
+        function f2(id){
+            id.bgColor = "blue"
+        }
+        function f3(e){
+            alert(e.keyCode)
+        }
+    </script>
+</head>
+    <!-- <body onkeyup="fun(this)" onkeydown="fun1(this)"></body> -->
+     <body onkeyup="f1(this)" onkeydown="f2(this)">
+        
+     </body>
+
+    
+</html>

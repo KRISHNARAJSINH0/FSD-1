@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n = parseInt(prompt("Enter number"));
+
+while (n > 9) {
+  let s = 0;
+  while (n > 0) {
+    s += n % 10;
+    document.writeln("n1"+n)
+    document.writeln("s"+s)
+    n = Math.floor(n / 10);
+    document.writeln("n2"+n)
+  }
+  n = s;
+}
+
+alert(n === 1 ? "Lucky Number" : "Not Lucky");
+ 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

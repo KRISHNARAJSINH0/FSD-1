@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        window.onload = function () {
+            var paragraphs = document.getElementsByTagName("p");
+
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].innerHTML += " (Updated)";
+            }
+
+            console.log("Updated elements count: " + paragraphs.length);
+        }
+    </script>
+</head>
+
+<body>
+
+    <p class="text">Paragraph 1</p>
+    <p class="text">Paragraph 2</p>
+    <p class="text">Paragraph 3</p>
+    <p class="text">Paragraph 4</p>
+    <p class="text">Paragraph 5</p>
+
+    <div class="text">Div 1</div>
+    <div class="text">Div 2</div>
+    <div class="text">Div 3</div>
+    <div class="text">Div 4</div>
+    <div class="text">Div 5</div>
+
+
+
+</body>
+
+</html>

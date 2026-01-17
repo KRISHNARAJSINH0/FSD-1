@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyboard Events</title>
+</head>
+<body>
+
+<input type="text" id="txt" onkeydown="keyPressed(event)" placeholder="Type here">
+
+<script>
+  function keyPressed(event) {
+    // Log any key pressed
+    console.log(event.key);
+
+    // Check if Enter key is pressed
+    if (event.key === "Enter") {
+      alert("You pressed Enter!");
+    }
+  }
+</script>
+
+</body>
+</html>

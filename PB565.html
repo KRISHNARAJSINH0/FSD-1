@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(data,month){
+            const m = data.filter(t =>
+                t.date.split("-")[1] === month
+            )
+            const sum = {}
+            for(let t of m){
+                if(sum[t.category]){
+                    sum[t.category] += t.amount
+                }else{
+                    sum[t.category] = t.amount
+                }
+            }
+            return sum 
+
+        }
+    const transactions = [
+        { category: 'Groceries', amount: 50, date: '2023-11-05' },
+        { category: 'Bills', amount: 200, date: '2023-10-28' },
+        { category: 'Groceries', amount: 75, date: '2023-11-12' },
+        { category: 'Entertainment', amount: 40, date: '2023-11-20' },
+        { category: 'Bills', amount: 150, date: '2023-11-15' }
+            ];
+        console.log(add(transactions,"11"))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

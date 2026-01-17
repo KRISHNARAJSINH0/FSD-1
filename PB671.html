@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function save(){
+            sessionStorage.setItem("product",document.getElementById("t1").value)
+            sessionStorage.setItem("price",document.getElementById("t2").value)
+            sessionStorage.setItem("discount",document.getElementById("t3").value)
+            alert("Save Data successfully")
+        }
+        function remove(){
+            sessionStorage.removeItem("discount")
+            console.log("product ",sessionStorage.getItem("product"))
+            console.log("price ",sessionStorage.getItem("price"))
+            console.log("discount ",sessionStorage.getItem("discount"))
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Product : <input type="text" id = "t1" required>
+        Price : <input type="text" id = "t2" required>
+        Discount : <input type="text" id = "t3" required>
+        <input type="button" value="Save" onclick="save()">
+        <button type="button" onclick="remove()">Remove</button>
+    </form>
+</body>
+</html>

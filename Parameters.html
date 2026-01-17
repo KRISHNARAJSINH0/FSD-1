@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function m1(a,b){
+            return a*b
+        }
+        let n1 = m1(5)
+        console.log(n1)
+        let n2 = m1(5,8)
+        console.log(n2)
+//---------------------------------------
+        function m2(a,b=1){
+            return a*b
+        }
+        let n3 = m2(5)
+        console.log(n3)
+        let n4 = m2(5,8)
+        console.log(n4)
+//--------------------------------------
+        function m3(a=1,b){
+            return a*b
+        }
+        let n5 = m3(5)
+        console.log(n5)
+        let n6 = m3(5,8)
+        console.log(n6)
+//--------------------------------------
+
+// Default parameters + style manipulation 
+//function fun (cl,bg = "blue"){
+//     d1.style.color = cl
+//     d1.style.backgroundColor = bg
+// }
+//--------------------------------------
+// Task
+        // function fun(cl,bg = "yellow",fz = "50px",fs = "italic"){
+        //     c1.style.color = cl
+        //     c1.style.fontSize = fz
+        //     c1.style.fontStyle = fs
+        //     c1.style.backgroundColor = bg
+            
+        // }
+
+//  Rest parameters
+// Normal 
+function fun(a,b){
+    console.log(a)
+    console.log(b)
+}  
+fun(1,2,3,4)
+
+// Rest 
+function fun1(a,b,...c){
+    console.log(a)
+    console.log(b)
+    console.log(c)
+}  
+fun1(1,2,3,4,5)
+    </script>
+</head>
+<body>
+    <!-- <p id = "d1">Hello</p>
+    <button type="button" onclick="fun('pink')">Click me</button> -->
+    <!-- -------------------------------------------------------- -->
+    <!-- <p id = "c1">HYY</p>
+    <button type="button" onclick="fun('blue')">Style</button> -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Events</title>
+</head>
+<body>
+
+<h1 id="heading"
+    onmouseover="mouseOver()"
+    onmouseout="mouseOut()">
+  Welcome
+</h1>
+
+<script>
+  // Store original text
+  var originalText = "Welcome";
+
+  // i. Mouse hover on heading
+  function mouseOver() {
+    var h = document.getElementById("heading");
+    h.innerHTML = "Mouse Over Heading";
+    h.style.color = "red";
+  }
+
+  // Restore when mouse leaves
+  function mouseOut() {
+    var h = document.getElementById("heading");
+    h.innerHTML = originalText;
+    h.style.color = "black";
+  }
+
+  // ii. Mouse button pressed
+  document.onmousedown = function () {
+    document.body.style.backgroundColor = "black";
+  };
+
+  // Mouse button released
+  document.onmouseup = function () {
+    document.body.style.backgroundColor = "cyan";
+  };
+</script>
+
+</body>
+</html>

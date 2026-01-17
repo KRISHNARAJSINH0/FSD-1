@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p class="section-text">A brief introduction.</p>
+<p class="section-text">The main body.</p>
+<p class="section-text">A concluding summary.</p>
+<script>
+    let x = document.getElementsByClassName("section-text")
+    for(let i=0; i<x.length; i++){
+        x[i].innerHTML = (i + 1) +". "+x[i].innerHTML
+    }
+</script>
+</body>
+</html>

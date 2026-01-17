@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(id){
+            id.innerHTML = "Mouse over"
+        }
+        function fun1(id){
+            id.innerHTML = "Mouse inn"
+        }
+        function fc(id){
+            id.innerHTML = "Clicked"
+            id.style.backgroundColor = "red"
+        }
+        function fd(id){
+            id.innerHTML = "Release"
+            id.style.backgroundColor="blue"
+        }
+        function t1(d){
+            d.style.color = "yellow"
+        }
+        function t2(d){
+            d.style.color = "blue"
+        }
+        function t3(){
+            document.body.style.backgroundColor = "red"
+        }
+        function t4(){
+             document.body.style.backgroundColor = "green"
+        }
+        function time(){
+            var d = new Date()
+            document.getElementById("p1").innerHTML = d
+        } 
+    </script>
+</head>
+<body>
+    <div onmouseover="fun1(this)" onmouseout="fun(this)" style="width: 60px; height: 60px; background-color: red; font-size: large;">
+    </div>
+    <div onmousedown="fc(this)" onmouseup="fd(this)" style="width: 60px; height: 60px; background-color: pink;">
+    </div>
+    <br><br>
+    <h1>Task</h1>
+    <h2 onmouseover="t1(this)" onmouseout="t2(this)" style="width: 50px; height: 50px; font-size: large;">Mouse</h2>
+    <button type="button" onmousedown="t3()">Click Red</button>
+    <button type="button" onmousedown="t4()">Click Green</button>
+    <p id = "p1">Time</p>
+    <button type="button" onclick="time()">Click</button>
+
+</body>
+</html>

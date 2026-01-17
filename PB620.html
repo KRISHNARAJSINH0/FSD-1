@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="image"></div>
+    <div class="image"></div>
+    <div class="image"></div>
+    <script>
+        function add(){
+            let x = document.getElementsByClassName("image")
+            let images = ["d1.jpg","d2.jpg","d3.jpg"]
+            for(let i=0; i<x.length;i++){
+                let img = document.createElement("img")
+                img.src = images[i]
+                img.height = 200
+                img.width = 200
+                x[i].appendChild(img)
+            }
+        }
+        add()
+    </script>
+</body>
+</html>

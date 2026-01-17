@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Events</title>
+</head>
+<body>
+
+<form onsubmit="submitForm()">
+
+  Username:
+  <input type="text"
+         id="username"
+         onfocus="focusUser()"
+         oninput="typing(this)"
+         onchange="fieldChanged(this)">
+  <br><br>
+
+  Email:
+  <input type="email"
+         id="email"
+         oninput="typing(this)"
+         onchange="fieldChanged(this)">
+  <br><br>
+
+  <input type="submit" value="Submit">
+
+</form>
+
+<script>
+  // 1. Prevent form submission and show alert
+  function submitForm() {
+    alert("Form submitted"); // prevents default submission
+  }
+
+  // 2. Change background to yellow when field loses focus
+  function fieldChanged(field) {
+    field.style.backgroundColor = "yellow";
+  }
+
+  // 3. Change username background to pink on click/focus
+  function focusUser() {
+    document.getElementById("username").style.backgroundColor = "pink";
+  }
+
+  // 4. Change text color to red while typing
+  function typing(field) {
+    field.style.color = "red";
+  }
+</script>
+
+</body>
+</html>

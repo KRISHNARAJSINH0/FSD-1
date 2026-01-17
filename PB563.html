@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(students){
+            for(let s of students){
+                let input = prompt("Enter marks of "+s.name)
+                let marks = Number(input)
+
+                if(isNaN(marks)){
+                    alert("Please Enter Only Numbers :")
+                    continue 
+                }
+
+                s.FSD = marks
+            }
+            let sum = "Fsd Marks are \n"
+            for(let s of students){
+                sum += `${s.name} : ${s.FSD}\n`
+            }
+            alert(sum)
+        }
+        const student = [
+            {name : "alice", FSD : 0},
+            {name : "John", FSD : 0},
+            {name : "Xon", FSD : 0}
+        ] 
+        add(student)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

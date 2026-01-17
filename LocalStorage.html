@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //localStorage.setItem("Username ","abc")
+        //let u = localStorage.getItem("Username")
+        //console.log(u)
+
+        //localStorage.setItem("Username","abcd")
+        //localStorage.removeItem("Username") // for remove 1 item 
+
+        // localStorage.clear() // for detele all items
+
+        //sessionStorage.setItem("cart","3 Items")
+        //let u2 = sessionStorage.getItem("cart")
+        //console.log(u2)
+
+        //sessionStorage.removeItem("cart")
+        //sessionStorage.clear()
+        // function saveuser(){
+        //     let u1 = document.getElementById("t1").value
+        //     localStorage.setItem("t1",u1)
+        //     sessionStorage.setItem("t1",u1)
+        // }
+        // function showuser(){
+        //     let a = localStorage.getItem("t1")
+        //     let b = sessionStorage.getItem("t1")
+        //     document.getElementById("output").innerHTML = "Local :" + a +"<br>"+"Session :" + b
+
+        // }
+        // function clearuser(){
+        //     localStorage.clear()
+        //     sessionStorage.clear()
+        //     document.getElementById("output").innerHTML = "clear"
+        // }
+        //Task
+        //where take to filldes in session storage username = lj, email = "lj@exampale.com" retrive and display the stored username in the console remove only the email filde from session storege than print the remaning data in the console 
+
+        // sessionStorage.setItem("Username","Lj")
+        // let u1 = sessionStorage.getItem("Username")
+        // sessionStorage.setItem("Email","Lj@example.com")
+        // let u2 = sessionStorage.getItem("Email")
+        // console.log(u1)
+        // console.log(u2)
+        // sessionStorage.removeItem("Email")
+
+        //Task
+        // Ctrate a form with key feilds products , price and descount also add a save button 
+        // 1 = when the user save stored the enter values in to local storage 
+        // 2 = after saving display a storege data saving a local storage 
+        // 3 = add another button remove discount that removes only the discount feilds from the local stoage 
+        // after removal dislay the remaning data in the console  
+        function fun(){
+            let x = document.getElementById("a").value
+            let y = document.getElementById("b").value
+            let z = document.getElementById("c").value
+            localStorage.setItem("products"+x)
+            localStorage.setItem("price"+y)
+            localStorage.setItem("discount"+z)
+            alert("'Data saved in local storage'")
+        }
+        function red(){
+            localStorage.clear(z)
+            console.log(localStorage.getItem(x))
+            console.log(localStorage.getItem(y))
+
+        }
+        // Task
+         // create a form with 3 feilds fname lname and roll number also add save button
+        //  1 = when the user click save stored the Enter values into session storage after saving display a msg in alert box saved session add another button remove roll no feilds the roll no feilds from session storage also print data in console 
+
+    </script>
+</head>
+<body>
+    <!-- Username : <input type="text" id = "t1"><br><br>
+    <button onclick="saveuser()" >Save</button>
+    <button onclick="showuser()" >Show</button>
+    <button onclick="clearuser()" >Clear</button>
+    <p id = "output"></p> -->
+    <!-- Task -->
+    <form>
+        Products : <input type="text" id = "a"><br><br>
+        Price : <input type="text" id  = "b"><br><br>
+        Discount : <input type="text" id = "c"><br><br>
+        <button type="button" onclick="fun()" >Save</button>
+        <button type="button" onclick="red()">Remove Discount</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+        <script>
+        localStorage.setItem("age", "30");
+        localStorage.setItem("name1", "johnDoe");
+        localStorage.setItem("name", "janeDoe");
+        localStorage.setItem("name", "mikeSmith");
+        localStorage.removeItem("nameM");
+        console.log(localStorage.getItem("name")); 
+        localStorage.clear();
+        console.log(localStorage.getItem("age"));  
+
+
+        sessionStorage.setItem("sessionName", "sessionValue");
+        sessionStorage.setItem("tempData", "12345");
+        // sessionStorage.removeItem("tempData");
+        sessionStorage.setItem("sessionName1", "newSessionValue");
+        sessionStorage.setItem("sessionName", "updatedSessionValue");
+        console.log(sessionStorage.getItem("sessionName"));
+
+        function saveUsername() {
+            var username = document.getElementById("un").value;
+            localStorage.setItem("username", username);
+            alert("Username saved!");
+        }
+        function showUsername() {
+            var storedUsername = localStorage.getItem("username");
+            document.getElementById("output").innerText = "Stored Username: " + storedUsername;
+        }
+        function clearUsername() {
+            localStorage.removeItem("username");
+            alert("Username cleared!");
+        }
+
+    var username = "LJ";    
+    sessionStorage.setItem("username", username);
+    var email = "LJ@example.com";
+    sessionStorage.setItem("email", email);
+
+    console.log("Stored Username in sessionStorage: " + sessionStorage.getItem("username"));
+    sessionStorage.removeItem("email");
+    console.log("Remaining data in sessionStorage:"+ sessionStorage.getItem("username"));
+
+    function saver()
+    {
+            var product = document.getElementById('product').value;
+            var price = document.getElementById('price').value;
+            var discount = document.getElementById('discount').value;
+            localStorage.setItem('product', product);
+            localStorage.setItem('price', price);
+            localStorage.setItem('discount', discount);
+            alert('Data saved in local storage');
+    }
+    function remdisc()
+        {
+            localStorage.removeItem('discount');
+            console.log('Remaining data in localStorage:');
+            console.log('Product: ' + localStorage.getItem('product'));
+            console.log('Price: ' + localStorage.getItem('price'));
+        }
+    function saver1(){
+        var fname = document.getElementById('fname').value;
+        var lname = document.getElementById('lname').value;
+        var rollno = document.getElementById('rollno').value;
+        sessionStorage.setItem('fname', fname); 
+        sessionStorage.setItem('lname', lname);
+        sessionStorage.setItem('rollno', rollno);
+        alert('Saved session');
+        }
+
+    function remrno(){
+        sessionStorage.removeItem('rollno');
+        console.log('Remaining data in sessionStorage:');
+        console.log('First Name: ' + sessionStorage.getItem('fname'));
+        console.log('Last Name: ' + sessionStorage.getItem('lname'));
+    }
+    </script>
+</head>
+<body>
+    <!-- username: <input type="text" id="un" >
+    <button onclick="saveUsername()">Save Username</button>
+    <button onclick="showUsername()">Show Username</button>     
+    <button onclick="clearUsername()">Clear Username</button>
+    <p id="output"></p> -->
+
+    <!-- create a small html page where, take 2 fields in wsession storage , username="LJ"
+      , emil ="LJ@example.com" 
+      retrieve and display the stored username in the console , remove only the email field from session and then print the remaining data in the console-->
+
+      <!-- create a form with 3 fields , product,price and discount also add a save button 
+       1st requirement , when the user clicks save , store the entered value into local storage 
+       2nd req : after saving display a msg , data saved in local storage 
+       3rd req: add another button , remove discount that remove only the discount field from local storage 
+       4th req: after removal , display the remaining data in the console -->
+
+
+       <form action="">
+        Product: <input type="text" id="product"><br><br>
+        Price: <input type="text" id="price"><br><br>
+        Discount: <input type="text" id="discount"><br><br>
+        <button type="button" onclick="saver()">Save</button>
+        <button type="button" onclick="remdisc()">Remove Discount</button>
+       </form>
+       <br><br>
+   
+
+       <!-- create a form with 3 fields : fname,lname and rollno
+        also add a save button 
+        1st req: when user clicks save , store the entered values in session storage after savibng display msg in alert box , saved session  and another button remove rollno. field only from session storage also print remaining data in the console -->
+
+        <br>
+        <form action="">
+        firstName: <input type="text" id="fname"><br><br>
+        LastName: <input type="text" id="lname"><br><br>
+        Roll NUmber : <input type="text" id="rollno"><br><br>
+        <button type="button" onclick="saver1()">Save</button>
+        <button type="button" onclick="remrno()">Remove Roll Number</button>
+       </form>
+</body>
+</html>

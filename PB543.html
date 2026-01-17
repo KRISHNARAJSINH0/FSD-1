@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Digit Operation</title>
+</head>
+<body>
+
+<script>
+  // Take 2-digit number from user
+  let num = parseInt(prompt("Enter a two-digit number:"));
+
+  // Separate digits
+  let firstDigit = Math.floor(num / 10);
+  let secondDigit = num % 10;
+  console.log(firstDigit)
+  console.log(secondDigit)
+  // Multiply first digit by itself second digit times
+  let result = 1;
+  for (let i = 1; i <= secondDigit; i++) {
+    result = result * firstDigit;
+  }
+
+  // Display result
+  alert(
+    "First Digit: " + firstDigit +
+    "\nSecond Digit: " + secondDigit +
+    "\nResult: " + result
+  );
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form event</title>
+    <script>
+        //1.Onchange
+        function upper(id){
+            id.value=id.value.toUpperCase()
+        }
+        function f1(id){
+            id.value = id.value.toLowerCase()
+        }
+        function fun(id){
+            obj=document.f1.t1.value
+            alert(obj)
+        }
+        function fun1(id){
+            obj1 = document.f2.t2.value
+            obj2 = document.f2.t3.value
+            obj3 = document.f2.t4.value
+            obj4 = document.f2.t5.value
+            alert(obj1+"\n"+obj2+"\n"+obj3+"\n"+obj4)
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onchange="upper(this)" value="Hello">
+    <input type="text" onfocus="this.style.backgroundColor='yellow'">
+    <input type="text" onblur="f1(this)" value="Hello">
+    <input type="text" oninput="f1(this)">
+    <br><br>
+    <form name="f1" onsubmit="fun(this)">
+        Username:<input type="text" name="t1"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <h1>Task</h1>
+    <form name = "f2" onsubmit="fun1(this)">
+        <fieldset style="width: 100px; height: 340px;">
+        <span>Username :</span>
+        <input type="text" name = "t2"><br><br>
+        <span>Password :</span>
+        <input type="password" name = "t3"><br><br>
+        <span>Conform pass :</span>
+        <input type="password"><br><br>
+        <span>Gender :</span>
+        <input type="radio" name = "t4" id = "d" value="Male">Male
+        <input type="radio" name = "t4" id = "d" value="Female">Fenale
+        <br><br>
+        <span>Address :</span>
+        <textarea name="t5" id="d2"></textarea><br><br>
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form><br>
+</body>
+</html>

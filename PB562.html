@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const students = [
+    { name: 'Alice', scores: { math: 85, science: 90, history: 78 } },
+    { name: 'Bob', scores: { math: 92, science: 88, history: 95 } },
+    { name: 'Charlie', scores: { math: 70, science: 75, history: 80 } },
+    { name: 'Diana', scores: { math: 95, science: 98, history: 93 } }
+];
+        
+        let topStudent = null
+        let topAvg = 0
+        for(let student of students){
+            const score = Object.values(student.scores)  
+            const Avg = score.reduce((sum,scor)=> sum+scor,0)/score.length
+            if(Avg > topAvg){
+                topAvg = Avg
+                topStudent = {
+                    name : student.name,
+                    Avg : Avg.toFixed(2)
+                }
+            }
+        }
+        console.log(topStudent)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

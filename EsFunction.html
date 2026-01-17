@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //case 1 
+        const add = (a,b) => a+b
+        console.log(add(3,4))
+
+        //case 2
+        const m1 = (x) => x*x
+        console.log(m1(5))
+            //or
+        const m3 = x => x*x
+        console.log(m3(5))
+
+        //case 3
+        const h1 = () => "hello"
+        console.log(h1())
+
+        //case 4
+        const m2 = (y,z) => {
+            return y*z
+        }
+        console.log(m2(9,10))
+
+        // Ex - 1 
+        const newfun = (p) => `val ${p}` // in backclick $ and {} this is importent 
+        console.log(newfun(30)) 
+        
+        // Ex - 2
+        const fun1 = (val) => "hello" + val
+        console.log(fun1("word"))
+
+        // Understanding concept 
+        // case 1
+        const addd = (j,k) => {
+            ans = `${j+k}`
+        }
+        console.log("ans "+addd(8,9))
+
+        //case 2
+        const add2 = (j,k) =>
+            ans1 = `${j+k}`
+            console.log("add "+add(8,9))
+        
+        //case 3
+        const add3 = (j,k) =>{
+            return ans = `${j+k}`
+        }
+        console.log("add "+add3(8,9))
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

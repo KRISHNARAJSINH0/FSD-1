@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <script>
+        //document.getElementById("title");
+        //document.getElementsByClassName("box");
+        //document.getElementsByTagName("p");
+        //document.querySelector(".card");
+        //document.querySelectorAll(".card");
+        //button.addEventListener("click", fun);
+        //element.remove();
+        //let div = document.createElement("div");
+        //parent.appendChild(child);
+        //img.setAttribute("src", "pic.jpg");
+        //element.innerHTML = "Hello World";
+
+        // function fun(){
+        //     document.getElementById("demo").innerHTML = "hello word"
+        // }
+        // function fun1(){
+        //     var x=document.getElementsByClassName("d")
+        //    x[0].innerHTML = "hyyy how are you"
+        // }
+        // function fun2(){
+        //     document.querySelector("p").style.color = ("red")
+        // }
+        // function fun3(){
+        //     for(i=0;i<5;i++){
+        //         var x =  document.querySelectorAll("p")
+        //         x[i].innerHTML = "Change"
+        //         x[i].style.color = "red"
+        //         x[i].style.fontSize = "50px"
+        //         x[i].style.fontStyle = "italic"
+        //     }
+        // }
+        // function fun1(){
+        //     document.getElementById("p1").innerHTML = "<b>hello</b>"
+        // }
+        // function fun2(){
+        //     document.getElementById("p2").innerText = "<b>hello</b>"
+        // }
+        // function fun3(){
+        //     document.getElementById("img").setAttribute("src","hollow1.jpg") 
+        // }
+
+        // function f1(){
+        //     alert(document.getElementById("p3").getAttribute("title"))
+        // }
+        // function f2(){
+        //     alert(document.getElementById("p4").removeAttribute("title"))
+        // }
+
+        // style manipulation 
+        // function fun(){
+        //     document.getElementById("d1").style.color = "blue"
+        // }
+
+        function fun(){
+           let x =  document.getElementsByClassName("demo")
+           for(i=0;i<3;i++){
+           x[i].style.color = "blue"
+           x[i].style.backgroundColor = "yellow"
+           }
+        }
+        function fun1(){
+            let y = document.getElementsByClassName("d")
+            y[0].style.textTransform = "uppercase"
+        }
+        function fun2(){
+            let z = document.getElementsByClassName("d")
+            z[0].style.textTransform =  "lowercase"
+        }
+
+    </script>                
+</head>
+<body>
+    <!-- <p>This is Selector</p>
+    <button type="button" onclick="fun2()">Click Selector</button>
+    <p>This is SelectorAll</p>
+    <button type="button" onclick="fun3()">Click Selector</button>
+
+    <p id = "demo">ID</p>
+    <button type="button" onclick="fun()">Click ID</button>
+    <p class = "d">Class</p>
+    <p class = "d">Class123</p>
+    <button type="button" onclick="fun1()">Click Class</button> -->
+
+    <!-- <p id = "p1"></p>
+    <button type="button" onclick="fun1()">click</button>
+    <p id = "p2"></p>
+    <button type="button" onclick="fun2()">click</button>
+    
+    <img id = "img"/>
+    <button onclick="fun3()" type="button">Click img</button> -->
+
+    <!-- <p id = "p3" title="demo text"></p>
+    <button type="button" onclick="f1()">Click</button>
+    <p id = "p4" title="demo text"></p>
+    <button type="button" onclick="f2()">Click</button> -->
+
+    <!-- <p id = "d1">Hello</p>
+    <button type="button" onclick="fun()">Click</button> -->
+
+    <h1 class="demo">H1 Tag</h1>
+    <p class="demo">P tag</p>
+    <pre class="demo">Pre Tag</pre>
+    <button type="button" onclick="fun()">Click</button>
+    <h2 class="d">Hello</h2>
+    <button type="button" onclick="fun1()">Upper</button>
+    <button type="button" onclick="fun2()">Lower</button>
+
+</body>
+</html>

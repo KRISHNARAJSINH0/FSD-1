@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse and Button Event</title>
+</head>
+<body>
+
+<!-- Div with initial value 0 -->
+<div id="box"
+     onmouseover="mouseEnter()"
+     onmouseout="mouseLeave()"
+     style="width:200px; height:100px; border:1px solid black;
+            text-align:center; line-height:100px; background-color:white;">
+  0
+</div>
+
+<br><br>
+
+<!-- Button -->
+<button onclick="increaseValue()">Increase</button>
+
+<script>
+  var count = 0;
+
+  // Change background to yellow when mouse enters
+  function mouseEnter() {
+    document.getElementById("box").style.backgroundColor = "yellow";
+  }
+
+  // Change background to white when mouse leaves
+  function mouseLeave() {
+    document.getElementById("box").style.backgroundColor = "white";
+  }
+
+  // Increase number inside div
+  function increaseValue() {
+    count++;
+    document.getElementById("box").innerHTML = count;
+  }
+</script>
+
+</body>
+</html>

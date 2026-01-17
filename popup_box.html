@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert box (ok button -> for dismiss box)
+        // confirm box (ok + cancel)
+        // prompt box (ok + cancel )
+        function fun(){
+        alert("this is alert")
+        }
+
+        function fun2(){
+            con = confirm("This is confirm")
+            if (con == true){
+                document.writeln("user works") // ok means true
+            }
+            else{
+                document.writeln("user not works ") // cancel means false
+                return false
+            }
+        }
+        function fun3(){
+            name = prompt("this is prompt")
+            alert("this is prompt "+name)
+            document.writeln("this is given prompt "+name)
+        }
+    </script>
+</head>
+<body>
+    
+    <button type="button" onclick="fun()">alert</button>
+    <button type="button" onclick="fun2()">confirm</button>
+    <button type="button" onclick="fun3()">prompt</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Events</title>
+</head>
+<body>
+
+<h1 id="heading" onclick="changeText()">Click Me</h1>
+
+<button onclick="changeRed()">Red</button>
+<button onclick="changeBlue()">Blue</button>
+
+<script>
+  // i. Change heading text, style, and size
+  function changeText() {
+    var h = document.getElementById("heading");
+    h.innerHTML = "Hello World";
+    h.style.fontStyle = "italic";
+    h.style.fontSize = "50px";
+  }
+
+  // ii. Change heading color to red
+  function changeRed() {
+    document.getElementById("heading").style.color = "red";
+  }
+
+  // ii. Change heading color to blue
+  function changeBlue() {
+    document.getElementById("heading").style.color = "blue";
+  }
+</script>
+
+</body>
+</html>

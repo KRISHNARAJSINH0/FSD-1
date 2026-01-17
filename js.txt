@@ -1,0 +1,173 @@
+1.  document.getElementById("demo").innerHTML = "my first js" : 
+        => this is work on body but in function this is work on head  
+
+2.  window.alert("this is alert") : 
+        => its give alert on top
+                e.g : we also use direct alert like alert("this is alert")
+
+3.  onclick : 
+        => its work in button for call function and also write anything like document.write()
+
+4.  console.log("this is console text area"):
+        => its write in console if we want see then right click on desktop and then inspect then click on console 
+
+5.  onclick = "window.print()":
+        => its work on button and this function use to print document, if we click on button then its show print function for print
+
+6.  var	:
+        => Declares a variable
+
+7.  let	:
+        => Declares a block variable
+
+8.  const:
+    	=> Declares a block constant
+
+9.  if	:
+        => Marks a block of statements to be executed on a condition
+
+10. switch :
+    	=> Marks a block of statements to be executed in different cases
+
+11. for :
+    	=> Marks a block of statements to be executed in a loop
+
+12. function :
+    	=> Declares a function
+
+13. return :
+    	=> Exits a function
+
+14. try :
+    	=> Implements error handling to a block of statements
+
+15. _,$ :
+        => its walid for name in variable
+
+16. pop,push and index :
+        => in js we use pop and push but first we make list using const and then name of const and .
+            e.g => const car = ["BMW","Volvo","Audi]
+                        car.push("Safari")  => its push in last
+                        car.pop()           => its pop in last
+                        car[0] = "Toyota"   => its delete 0 index and then add string or number 
+
+17. make an Object :
+        => make object and add property and show property like this 
+            e.g => const car = {type:"Fiat", model:"500", color:"white"};
+                        car.color = "red";      => its changen value
+                        car.owner = "Johnson";  => its add key with value 
+                        document.getElementById("demo2").innerHTML = car.owner; => its for display
+
+18. DATA Type :
+        => String, Number, Bigint, Boolean, Object, Undefined, Null, Symbol     
+                e.g =>  String = "JS"
+                        Number = 5,4.5,45.10
+                        Bigint = 1234567890123456789012345n
+                        Boolean = true,false
+                        // Object is not a variable it's only type 
+                        Object e.g => const person = {firstName:"John", lastName:"Doe"}; // object
+                                   => const cars = ["Saab", "Volvo", "BMW"]; //Array object
+                                   => const date = new Date("2022-03-25"); //Date object
+                        Undefined = let x;
+                        Null = let x = null
+                        Symbol = const x = Symbol()
+
+19. typeof :
+        => its return String,number,
+
+20. use of e :
+        => let y = 123e5;    // 12300000 , let z = 123e-5;   // 0.00123
+
+21. && : 
+        => Logical And 
+
+22. ||, ! :
+        => Logical or
+        => Logical Not 
+
+23. ?? :
+        =>Ex:   let username = null;
+                let name = username ?? "Guest";
+                console.log(name); // Guest
+                // its work for null values and Undefined values not 0
+
+24. Ternary :
+        => If the value of age is < 18, set the value of text to "Minor", otherwise to "Adult":
+                Ex. let text = (age < 18) ? "Minor" : "Adult";
+                        => if for True Or else for False 
+
+25. String Methods:
+        => Note : All string methods return a new value,They do not change the original string.
+        =>      String length =>Returns the length of a string
+                String charAt() =>Returns the character at a specified index (position)
+                String charCodeAt() =>Returns the Unicode of the character at a specified index
+                String codePointAt() =>Returns the Unicode value at an index (position) in a string
+                String concat() =>Returns two or more joined strings
+                String at() =>Returns an indexed character from a string
+                String [.]
+                String slice() =>Extracts a part of a string and returns a new string
+                String substring() =>Extracts characters from a string, between two specified      indices (positions)
+
+                String substr() =>Deprecated. Use substring() or slice() instead.
+                String toUpperCase() =>Returns a string converted to uppercase letters
+                String toLowerCase() =>Returns a string converted to lowercase letters
+                String isWellFormed() =>Returns true if a string is well formed
+                String toWellFormed() =>Returns a string where "lone surrogates" are replaced with the Unicode replacement character
+
+                String trim() => Returns a string with removed whitespaces
+                String trimStart() => Returns a string with removed whitespaces from the start
+                String trimEnd() =>Returns a string with removed whitespaces from the end
+                String padStart() =>Pads a string from the start
+                String padEnd() =>Pads a string at the end
+                String repeat() =>Returns a new string with a number of copies of a string
+                String replace() =>Searches a string for a pattern, and returns a string where the first match is replaced
+
+                String replaceAll() =>Searches a string for a pattern and returns a new string where all matches are replaced
+
+                String split() =>Splits a string into an array of substrings
+
+26. String Search Methods :
+        =>      String indexOf() => Returns the index (position) of the first occurrence of a value in a string
+
+                String lastIndexOf() => Returns the index (position) of the last occurrence of a value in a string
+
+                String search() => Searches a string for a value, or regular expression, and returns the index (position) of the match
+
+                String match() =>Searches a string for a value, or a regular expression, and returns the matches
+
+                String matchAll() =>Searches a string for a value, or a regular expression, and returns the matches
+
+                String includes() =>Returns if a string contains a specified value
+                String startsWith() =>Checks whether a string begins with specified characters
+                String endsWith() =>Returns if a string ends with a specified value
+
+27. String HTML Wrapper Methods:
+        =>      anchor()   => Displays a string as an anchor
+                big()	   => Displays a string using a big font
+                blink()	   => Displays a blinking string
+                bold()	   => Displays a string in bold
+                fixed()	   => Displays a string using a fixed-pitch font
+                fontcolor()=> Displays a string using a specified color
+                fontsize() => Displays a string using a specified size
+                italics()  => Displays a string in italic
+                link()	   => Displays a string as a hyperlink
+                small()    => Displays a string using a small font
+                strike()   => Displays a string with a strikethrough
+                sub()      => Displays a string as subscript text
+                sup()      => Displays a string as superscript text
+
+28. parseInt() :
+        => its used to convert a string into an integer (whole number).
+
+29. Math.floor() :
+        => is used to round a number DOWN to the nearest integer.
+
+30. Math.sqrt() :
+        => is used to find the square root of a number.
+
+31. reduce() :
+        => is used to combine all values of an array into a single value.
+                => reduce(sum, product)
+
+32. window.onload = function(){} :
+        => if head not work for js and its require body , so use this in head and dont give function name 

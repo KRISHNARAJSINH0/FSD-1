@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Character Occurrence</title>
+</head>
+<body>
+
+<script>
+  // Take input from user
+  let str = prompt("Enter a string:");
+  let ch = prompt("Enter a character to check:");
+
+  let count = 0;
+
+  // Loop through the string
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === ch) {
+      count++;
+    }
+  }
+
+  // Display result
+  alert("The character " + ch + " occurs " + count + " times in the string.");
+</script>
+
+</body>
+</html>

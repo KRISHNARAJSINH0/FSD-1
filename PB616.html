@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let x = document.getElementsByClassName("description")
+            x[0].innerHTML="<strong>Updated!</strong>"
+            x[0].setAttribute("title", "This item has been updated.");
+        }
+    </script>
+</head>
+<body>
+    <p class="description">Item 1</p>
+    <p class="description">Item 2</p>
+    <p class="description">Item 3</p>
+    <button type="button" onclick="add()">Click</button>
+</body>
+</html>

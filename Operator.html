@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Spread Operator 
+        // Normal 
+        arr1 = [10,42,35]
+        arr2 = [14,50]
+        let arr3 = [arr1,arr2]
+        console.log(arr3)
+
+        //Spread 
+        let arr = [...arr1,...arr2]
+        console.log(...arr)
+        console.log(arr)
+        console.log(Math.min(arr))
+        console.log(Math.min(...arr))
+        console.log(`Sorted : ${arr.sort()}`)
+
+        let text = "12345";
+        let min = Math.min(...text);
+        let max = Math.max(...text);
+    function fun(){
+        document.getElementById("demo").innerHTML = `Minimum is ${min} Maximum is:${max}`;
+    }
+    </script>
+</head>
+<body>
+    <p id="demo">Min & Max</p>
+    <button type="button" onclick="fun()">Btn</button>
+</body>
+</html>

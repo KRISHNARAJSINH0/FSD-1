@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            obj = document.j1.t1.value
+            alert(obj)
+        }
+        function fun1(){
+            obj = document.j2.t2.value
+            let ob = (obj=="") ? alert("Enter something") : alert("Wlcome "+obj)
+        }
+        function fun2(){
+            pat = /^\d{10}$/ // /t|T$/ // [^abc] not Abc Match // [abc] Match Abc // i = stand for all type of char
+            u = document.getElementById("t1").value
+            let d = (pat.test(u)) ? alert("String Matched") : alert("Not Matched")
+        }
+        // to valided username and pass passs length must be of 6 to 12 char for username filed it should not strat with _,@ and any number also chack both must not be blank
+        function fun3(){
+            pat1 = /^@|^_|^[0-9]/
+            u1 = document.getElementById("t").value
+            u2 = document.getElementById("p").value
+            if(pat1.test(u1)){
+                alert("Inavlid")
+
+            }else if(u1.value == ""){
+                alert("Invalid")
+            }
+            else if(u2.length > 12 || u2.length < 6){
+                alert("invlid")
+            }else{
+                alert("Valid")
+            }
+        }
+        function fun4(){
+            pat2 = /^\d{4}$/
+            u3 = document.getElementById("a").value
+            let b = (pat2.test(u3)) ? alert("String Matched") : alert("Not Matched")
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return fun()" name = "j1">
+        Name : <input type="text" name = "t1">
+        <input type="submit" value="submit">
+    </form>
+    <h1>Task0</h1>
+    <form onsubmit="return fun1()" name = "j2">
+        Username : <input type="text" name = "t2">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    <h1>Validation</h1>
+    <input type="text" id = "t1">
+    <input onclick="fun2()"  type = "submit" value="submit">
+
+    <h1>Task 1</h1>
+    Username : <input type="text" id = "t">
+    Password : <input type="password" id = "p">
+    <input type="submit" onclick="fun3()" value = "Submit"><br><br>
+<form onsubmit="fun4()" name = "c">
+    <fieldset>
+    <h1>Task 2</h1>
+    Match : <input type="text" id = "a">
+    <input type="submit" value="submit">
+    </fieldset>
+</form>
+
+</body>
+</html>

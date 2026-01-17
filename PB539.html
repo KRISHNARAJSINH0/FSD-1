@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function getTotalPrice(groceries) {
+  let total = 0;
+
+  for (let item of groceries) {
+    total += item.quantity * item.price;
+  }
+
+  return total;
+}
+const groceries = [
+  { product: "Milk", quantity: 2, price: 50 },
+  { product: "Bread", quantity: 1, price: 40 },
+  { product: "Eggs", quantity: 12, price: 5 }
+];
+
+console.log(getTotalPrice(groceries)); // Output: 200
+    </script>
+</head>
+<body>
+</body>
+</html>

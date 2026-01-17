@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function registerUser(){
+            alert("-Wlcome-")
+            let name;
+            let pass;
+            while(!name){
+                name = prompt("Enter Username :")
+                if(name == null || name == undefined){
+                    name = ""
+                }
+            }
+            alert("Name add Successfully :")
+            while(!pass || pass.length < 8){
+                pass = prompt("Enter password :")
+                if (pass.length < 8 || pass === null){
+                    alert("password must content 8 characters")
+                    pass = ""
+                }
+            }
+            alert("Pass addded successfully :")
+            con = confirm("Are you sure you want to register with this username and password?")
+            if (con == true){
+                alert(`successful registration \n Name :${name} \n Password :${pass}`)
+            }else{
+                alert("Registration canceled.")
+            }
+
+
+        } 
+        registerUser() 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

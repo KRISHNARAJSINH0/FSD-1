@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Factorial Program</title>
+</head>
+<body>
+
+<script>
+  function findFactorial(num) {
+    let fact = 1;
+
+    for (let i = 1; i <= num; i++) {
+      fact = fact * i;
+    }
+
+    return fact;
+  }
+
+  // Take input from user
+  let number = parseInt(prompt("Enter a number:"));
+
+  if (number < 0) {
+    alert("Factorial is not defined for negative numbers.");
+  } else {
+    alert("Factorial of " + number + " is " + findFactorial(number));
+  }
+</script>
+
+</body>
+</html>

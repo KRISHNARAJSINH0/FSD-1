@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    const products = [
+    { name: 'Laptop', price: 1200, category: 'Electronics' },
+    { name: 'T-shirt', price: 25, category: 'Apparel' },
+    { name: 'Keyboard', price: 75, category: 'Electronics' },
+    { name: 'Jeans', price: 60, category: 'Apparel' }
+        ];
+        for(let item of products){
+            if(item.category == 'Electronics' && item.price <= 1000){
+                document.writeln("Name :"+item.name+"<br>")
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
